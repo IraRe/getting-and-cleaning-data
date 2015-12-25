@@ -1,0 +1,14 @@
+Code Book
+==================================================================
+-> subject - Number of the volunteer who took part in the experiment
+-> activity - Name of the activity volunteers were performing (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+-> other variables are measurements described in README.txt in the data set directory downloaded at 
+   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Study Design
+==================================================================
+Data processed in this course project were downloaded at 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Only the mean and standard deviation for each measurement / variable was selected for further processing by run_analysis.R.
+The resulting data set contains the average values for each selected variable grouped by subject and activity.
