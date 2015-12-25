@@ -43,4 +43,8 @@ rename(named_data, subject = V1)
 by_subject_and_activity <- group_by(named_data, subject, activity, add = TRUE)
 tidy_data <- summarise_each(by_subject_and_activity, funs(mean))
 
+# remove the dots in the variable names
+names(tidy_data) <- sub("\\.\\.\\.","",names(tidy_data))
+names(tidy_data) <- sub("\\.\\.","",names(tidy_data))
+
 write.table(tidy_data, file="tidy_data.txt", row.names = FALSE)
